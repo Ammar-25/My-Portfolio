@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #7eadff;
+    background: linear-gradient(to right, #0f1323, #1d2133);
+    background-color: #0f1323;
+    margin: 0;
+    padding-top: 120px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navBar {
+    background-color: #0f1323;
+    color: #7eadff;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 2.25rem 12rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navBar .name{
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    justify-self: start;
+}
+
+.links a{
+    color: #7eadff;
+    transition: ease-in-out 0.15s;
+}
+
+.links a:hover {
+    color: #5387ff;
+}
+
+
+.social-icons {
+    justify-self: end;
+}
+
+section{
+    height: calc(100vh - 215px);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+section.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section + section{
+    margin-top: 6rem;
+}
+
+main{
+    padding: 2rem 12rem;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.imgProf{
+    border-radius: 12px;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    transition: ease-in-out 0.3s;
+}
+.imgProf:hover{
+    transform: scale(1.025);
+}
+
+.btns a{
+    text-decoration: none;
+    color: #101620;
+}
+
+.btns{
+    margin-top: 2rem;
+    display: flex;
+    gap: 12px;
+}
+
+.btn, .btn2{
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 7px;
+    border: none;
+    transition: ease-in-out 0.3s;
+    width: 120px;
+    font-weight: bold;
+}
+.btn{
+    border: #619bff 2.5px solid;
+    color: #619bff;
+    background-color: #101620;
+}
+
+.btn2{
+    background: linear-gradient(to right, #5387ff, #619bff);
+}
+.btn a{
+    color: #619bff;
+}
+
+.btn:hover,
+.btn2:hover {
+    transform: scale(1.02);
+}
+
+.about{
+    font-size: large;
+    width: 60%;
+}
+.about p{
+    line-height: 1.5;
+}
+
+.abtMe{
+    background-color: #00194d;
+    color: rgba(255, 255, 255, 0.89);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: small;
+
+}
