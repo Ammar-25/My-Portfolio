@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ammar Mohamed</title>
+    <link rel="icon" type="image/x-icon" href="assets/resume.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,18 +22,20 @@
             <a href="#About">About</a>
             <a href="#Contact">Contact</a>
         </div>
-        <div class="name">
-            Ammar Mohamed
-        </div>
+        <a href="#">
+            <div class="name">
+                Ammar Mohamed
+            </div>
+        </a>
         <div class="social-icons">
             <a href="https://www.facebook.com/ammarmohamed5105" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-facebook fa-lg"></i>
             </a>
             <a href="https://web.whatsapp.com/send?phone=201129264191" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-whatsapp fa-lg"></i>
             </a>
             <a href="https://www.linkedin.com/in/ammar-mohamed-807350349/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin fa-lg"></i>
             </a>
         </div>
     </nav>
@@ -40,7 +43,7 @@
         <section class="main">
             <div class="content">
                 <h1 class="name">Ammar Mohamed Ali</h1>
-                <p style="line-height: 1.5;">
+                <p>
                     specialize in building scalable web solutions and exploring the depths of backend architecture. With
                     a strong foundation
                     in Laravel and .NET, I focus on creating robust, high-performance systems that bridge the
@@ -48,24 +51,22 @@
                     data management and seamless user experiences.
                 </p>
                 <div class="btns">
-                    <button class="btn"><a href="#contact">Contact me</a></button>
-                    <button class="btn"><a href="#projects">Projects</a></button>
+                    <button class="btn"><a href="#Contact">Contact me</a></button>
+                    <button class="btn"><a href="#Projects">Projects</a></button>
                     <button class="btn2">
                         <a href="https://drive.google.com/file/d/1ixhCr_yW29nXCyJfiFKt_oDSonkU6rzi/view?usp=drive_link"
                             target="_blank">My resume</a>
                     </button>
                 </div>
             </div>
-            <div class="image">
-                <img class="imgProf" src="assets/profile.png" alt="">
-            </div>
+            <img class="imgProf" src="assets/profile.png" alt="">
         </section>
-        <section id="About" class="about">
+        <section id="About" class="about-section">
             <p class="sectionHeader">About me</p>
             <h1>
                 Crafting Digital Experiences
             </h1>
-            <p>
+            <p class="about-text">
                 As a dedicated Software Engineering student at Ain Shams University, I am on a continuous journey of
                 innovation and
                 problem-solving. My passion lies in transforming complex challenges into elegant, scalable web
@@ -85,21 +86,21 @@
                 development. I thrive on leveraging cutting-edge technologies to create impactful applications.
             </p>
             <div class="skills">
-                <div class="backend">
+                <div class="skill">
                     <i class="fa-solid fa-server fa-3x"></i>
                     <p style="font-weight: bold; font-size: x-large;">Backend Development</p>
                     <p>
                         PHP, Laravel, C#, .NET, SQL,PL/SQL
                     </p>
                 </div>
-                <div class="frontend">
+                <div class="skill">
                     <i class="fa-solid fa-code fa-3x"></i>
                     <p style="font-weight: bold; font-size: x-large;">Frontend Development</p>
                     <p>
                         HTML, CSS, JavaScript, Responsive Web Design
                     </p>
                 </div>
-                <div class="other">
+                <div class="skill">
                     <i class="fa-solid fa-tools fa-3x"></i>
                     <p style="font-weight: bold; font-size: x-large;">Other Skills</p>
                     <p>
@@ -107,6 +108,91 @@
                     </p>
                 </div>
             </div>
+        </section>
+        <section id="Projects" class="projects-section">
+            <p class="sectionHeader">My Projects</p>
+            <h1>Featured Projects</h1>
+            <p>A selection of projects demonstrating my commitment to building efficient and user-centric applications.</p>
+            <div class="projects">
+                <div class="project">
+                    <a href="https://thothgate.cloud/" target="_blank">
+                        <img src="assets/thothgate.jpg" alt="Operating Systems project">
+                    </a>
+                    <p class="project-title">Thoth Gate</p>
+                    <p class="project-description">Designed and developed a website for publishing and managing online courses implemented user-friendly navigation and
+                    courses organization using PHP Laravel.</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Mohamed-Ahmed285/BetterThanWindows-OS" target="_blank">
+                        <img src="assets/FOS.jpg" alt="Operating Systems project">
+                    </a>
+                    <p class="project-title">Operating Systems project</p>
+                    <p class="project-description">Implemented fault handler to manage memory and execution faults within the FOS Kernel using C language.</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Ammar-25/Real_State" target="_blank">
+                        <img src="assets/RealState.png" alt="Operating Systems project">
+                    </a>
+                    <p class="project-title">Real State Management System</p>
+                    <p class="project-description">Implemented a property management system using core data structures (linked lists, hash tables) to handle property
+                    listings, search, and updates efficiently.</p>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <p class="sectionHeader">Academic Journey</p>
+            <h1>My Education</h1>
+            <h2>Ain Shams University</h2>
+            <p class="major">Computer Science Student</p>
+            <p class="education-text">
+                As a student at FCIS, I am building a solid foundation in computer science, focusing on algorithms, data structures, and
+                system architecture. I bridge the gap between theory and practice by applying software design patterns to real-world
+                projects, preparing me to solve complex problems in an ever-evolving tech landscape.
+            </p>
+        </section>
+        <section id="Contact" class="contact-section">
+            <p class="sectionHeader">Let's Connect</p>
+            <h1>Get In Touch</h1>
+            <p>I am always open to discussing new projects, collaboration opportunities, or contributing to impactful initiatives. Feel
+            free to reach out!</p>
+            <div class="contact-container">
+                <div class="contact">
+                    <div class="info">
+                        <i class="fa-brands fa-github fa-2x"></i> <p>GitHub</p>
+                    </div>
+                    <p>Explore my code and contributions.</p>
+                    <button class="btn2">
+                        <a href="https://github.com/Ammar-25" target="_blank">
+                            Visit My Github
+                        </a>
+                    </button>
+                </div>
+                
+                <div class="contact">
+                    <div class="info">
+                        <i class="fa-brands fa-linkedin fa-2x"></i><p>LinkedIn</p>
+                    </div>
+                    <p>Connect with me professionally.</p>
+                    <button class="btn2">
+                        <a href="https://www.linkedin.com/in/ammar-mohamed-807350349/" target="_blank">
+                            Connect on LinkedIn
+                        </a>
+                    </button>
+                </div>
+                
+                <div class="contact">
+                    <div class="info">
+                        <i class="fa-brands fa-whatsapp fa-2x"></i><p>Whatsapp</p>
+                    </div>
+                    <p>Send me a message on WhatsApp.</p>
+                    <button class="btn2">
+                        <a href="https://drive.google.com/file/d/1ixhCr_yW29nXCyJfiFKt_oDSonkU6rzi/view?usp=drive_link" target="_blank">
+                            Send me a Message
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <p class="ending">Thank you for visiting my portfolio.</p>
         </section>
     </main>
     <script src="script.js"></script>
