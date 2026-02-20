@@ -26,7 +26,7 @@ function toggle() {
     menuToggle.classList.add("fa-bars");
   }
 }
-const text = "Hello, I'm Ammar Mohamed Ali.";
+const text = "Hello, I'm Ammar Mohamed.";
 let index = 0;
 function typeEffect() {
   if (index < text.length) {
