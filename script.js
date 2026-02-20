@@ -13,3 +13,8 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll("section").forEach((section) => {
   observer.observe(section);
 });
+
+function toggle() {
+  const navBar = document.querySelector(".navBar");
+  navBar.classList.toggle("mobile-active");
+}
