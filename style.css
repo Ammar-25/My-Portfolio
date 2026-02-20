@@ -33,6 +33,9 @@ p {
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
+  max-height: 150px;
+  overflow: hidden;
+  transition: all 1s ease;
 }
 
 .navBar .name {
@@ -95,7 +98,23 @@ section.appear {
 section + section {
   padding-top: 8rem;
 }
-
+#name::after {
+  content: "|";
+  animation: blink 1s infinite;
+  margin-left: 5px;
+  font-size: larger;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 main {
   padding: 2rem 14rem;
 }
@@ -319,4 +338,47 @@ img {
   .contact-container {
     grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width: 700px) {
+  .navBar {
+    grid-template-columns: 1fr auto;
+    padding: 4rem 2.5rem;
+    align-items: start;
+  }
+  .menu-toggle {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .links {
+    display: none;
+  }
+  .social-icons {
+    display: none;
+  }
+}
+.mobile-active {
+  max-height: 400px;
+}
+.mobile-active .name {
+  margin-bottom: 1.75rem;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.mobile-active .links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1;
+  grid-row: 2;
+  gap: 20px;
+  font-size: larger;
+}
+
+.menu-toggle i {
+  transition: transform 0.35s ease-in-out;
+}
+
+.mobile-active .menu-toggle i {
+  transform: rotate(90deg);
 }
