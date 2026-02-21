@@ -29,16 +29,21 @@ function toggle() {
 const text = "Hello, I'm Ammar Mohamed.";
 let index = 0;
 function typeEffect() {
-  if (index < text.length) {
-    document.getElementById("name").innerHTML += text.charAt(index);
-    index++;
-    setTimeout(typeEffect, 100);
+  // if screen width smaller than 900 px don't do this
+  if (window.innerWidth < 950) {
+    document.getElementById("name").innerHTML = text;
   } else {
-    setTimeout(() => {
-      document.getElementById("name").innerHTML = "Hello,";
-      index = 6;
-      typeEffect();
-    }, 2000);
+    if (index < text.length) {
+      document.getElementById("name").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 100);
+    } else {
+      setTimeout(() => {
+        document.getElementById("name").innerHTML = "Hello,";
+        index = 6;
+        typeEffect();
+      }, 2000);
+    }
   }
 }
 typeEffect();
