@@ -17,14 +17,6 @@ document.querySelectorAll("section").forEach((section) => {
 function toggle() {
   const navBar = document.querySelector(".navBar");
   navBar.classList.toggle("mobile-active");
-  const menuToggle = document.querySelector(".menu-toggle i");
-  if (navBar.classList.contains("mobile-active")) {
-    menuToggle.classList.remove("fa-bars");
-    menuToggle.classList.add("fa-xmark");
-  } else {
-    menuToggle.classList.remove("fa-xmark");
-    menuToggle.classList.add("fa-bars");
-  }
 }
 const text = "Hello, I'm Ammar Mohamed.";
 let index = 0;

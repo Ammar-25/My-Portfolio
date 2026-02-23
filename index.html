@@ -20,9 +20,12 @@
 
   <body>
     <nav class="navBar">
-      <div class="menu-toggle" onclick="toggle()">
-        <i class="fa-solid fa-bars fa-lg"></i>
-      </div>
+      <button class="hamburger-menu" id="hamburgerMenu" onclick="toggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="links">
         <a href="#Projects">Projects</a>
         <a href="#About">About</a>
@@ -54,22 +57,19 @@
         <div class="content">
           <h1 id="name" class="name"></h1>
           <p>
-            specialize in building scalable web solutions and exploring the
-            depths of backend architecture. With a strong foundation in Laravel
-            and .NET, I focus on creating robust, high-performance systems that
-            bridge the gap between complex data management and seamless user
-            experiences.
+            Building scalable web solutions and exploring the depths of backend
+            architecture.
           </p>
           <div class="btns">
-            <button class="btn"><a href="#Contact">Contact me</a></button>
-            <button class="btn"><a href="#Projects">Projects</a></button>
-            <button class="btn2">
-              <a
-                href="https://drive.google.com/file/d/1ixhCr_yW29nXCyJfiFKt_oDSonkU6rzi/view?usp=drive_link"
-                target="_blank"
-                >My resume</a
-              >
-            </button>
+            <a href="#Contact" class="btn"> Contact me </a>
+            <a href="#Projects" class="btn"> Projects </a>
+            <a
+              class="btn2"
+              href="https://drive.google.com/file/d/1ixhCr_yW29nXCyJfiFKt_oDSonkU6rzi/view?usp=drive_link"
+              target="_blank"
+            >
+              My resume
+            </a>
           </div>
         </div>
         <img class="imgProf" src="assets/profile.png" alt="" />
@@ -193,11 +193,13 @@
               <p>GitHub</p>
             </div>
             <p>Explore my code and contributions.</p>
-            <button class="btn2">
-              <a href="https://github.com/Ammar-25" target="_blank">
-                Visit My Github
-              </a>
-            </button>
+            <a
+              href="https://github.com/Ammar-25"
+              target="_blank"
+              class="btn2 contact-btn"
+            >
+              Visit My Github
+            </a>
           </div>
 
           <div class="contact">
@@ -206,14 +208,14 @@
               <p>LinkedIn</p>
             </div>
             <p>Connect with me professionally.</p>
-            <button class="btn2">
-              <a
-                href="https://www.linkedin.com/in/ammar-mohamed-807350349/"
-                target="_blank"
-              >
-                Connect on LinkedIn
-              </a>
-            </button>
+
+            <a
+              href="https://www.linkedin.com/in/ammar-mohamed-807350349/"
+              target="_blank"
+              class="btn2 contact-btn"
+            >
+              Connect on LinkedIn
+            </a>
           </div>
 
           <div class="contact">
@@ -222,11 +224,14 @@
               <p>Mail</p>
             </div>
             <p>Send me an email.</p>
-            <button class="btn2">
-              <a href="mailto:ammarmohamed5105@gmail.com" target="_blank">
-                Send me an Email
-              </a>
-            </button>
+
+            <a
+              href="mailto:ammarmohamed5105@gmail.com"
+              target="_blank"
+              class="btn2 contact-btn"
+            >
+              Send me an Email
+            </a>
           </div>
         </div>
         <p class="ending">Thank you for visiting my portfolio.</p>
