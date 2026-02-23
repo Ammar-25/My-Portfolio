@@ -76,6 +76,22 @@ p {
   color: #5387ff;
 }
 
+.links a::after {
+  position: relative;
+  top: 5px;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2.5px;
+  border-radius: 2px;
+  background-color: #5387ff;
+  transition: width 0.5s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
 .social-icons {
   justify-self: end;
   display: flex;

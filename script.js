@@ -18,6 +18,15 @@ function toggle() {
   const navBar = document.querySelector(".navBar");
   navBar.classList.toggle("mobile-active");
 }
+
+document.addEventListener("click", (e) => {
+  const navbar = document.querySelector(".navBar");
+  const toggleBtn = document.querySelector(".hamburger-menu");
+  if (!navbar.contains(e.target) && !toggleBtn.contains(e.target)) {
+    navbar.classList.remove("mobile-active");
+  }
+});
+
 const text = "Hello, I'm Ammar Mohamed.";
 let index = 0;
 function typeEffect() {
